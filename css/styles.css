@@ -66,9 +66,8 @@ header{
 /* CARD STYLES */
 .card-container{
     width: 100%;
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
+    min-height: 75%;
+    margin-top: 90px;
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -271,6 +270,11 @@ header{
 /* RESPONSIVE */
 
 @media screen and (max-width: 760px) {
+
+    .card-container{
+        margin-top: 10px;
+    }
+
     .card {
         width: 22rem;
         height: 20.2rem;
