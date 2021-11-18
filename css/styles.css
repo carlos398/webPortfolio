@@ -209,3 +209,57 @@ header{
     color: rgb(201, 149, 243);
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 760px) {
+    .card-container {
+        width: 22rem;
+        height: 20.2rem;
+    }
+    .card {
+        width: 22rem;
+        height: 20.2rem;
+    }
+    .card-header {
+        height: 8rem;
+    }
+    .information .logo {
+        width: 7rem;
+        height: 7rem;
+        top: -60px;
+    }
+
+    .information .logo2 {
+        width: 7rem;
+        height: 7rem;
+        border: 5px solid transparent;
+        top: -60px;
+        border-top: 5px solid rgba(221, 160, 221, 0.76);
+    }
+
+    .information .logo2::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        right: 5px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+        margin-top: 60px;
+    }
+    .info h4 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .social-networks {
+        margin-top: 15px;
+    }
+
+    .button {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 12px 15px;
+        border-radius: 7px;
+    }
+}
