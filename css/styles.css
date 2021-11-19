@@ -270,16 +270,16 @@ header{
     max-width: 1200px;
     margin: auto;
     padding: 10px 0px;
-    display: flex;
     background-color: white;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 4fr;
 }
 
 .proyects{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 30px;
 }
 
 .proyects-card{
@@ -293,7 +293,6 @@ header{
     background-size:cover;
     background-position:center center;
     box-shadow: 12px 12px 15px rgba(0, 0, 0, .5);
-    width: 32%;
 }
 
 
@@ -391,17 +390,15 @@ header{
         font-family: 'Outfit', sans-serif;
     }
 
-    .proyects-container{
-        padding-left:35px;
+    .proyects{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px 20px;
     }
 
     .proyects-card{
-        border-radius: 20px;
         min-height: 200px;
-        min-width: 340px;
-        width: 34.33%;
+        min-width: 200px;
     }
-
-
 
 }
