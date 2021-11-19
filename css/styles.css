@@ -265,14 +265,20 @@ header{
 
 /* PROYECTS */
 
-.proyects{
+.proyects-container{
     width: 100%;
     max-width: 1200px;
     margin: auto;
     padding: 10px 0px;
     display: flex;
-    flex-wrap: wrap;
     background-color: white;
+    gap: 20px;
+}
+
+.proyects{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -383,6 +389,17 @@ header{
         left: 0px;
         font-size: 25px;
         font-family: 'Outfit', sans-serif;
+    }
+
+    .proyects-container{
+        padding-left: 40px;
+    }
+
+    .proyects-card{
+        border-radius: 20px;
+        min-height: 200px;
+        min-width: 340px;
+        width: 34.33%;
     }
 
 
