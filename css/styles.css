@@ -13,6 +13,7 @@ body{
     width: 90%;
 }
 
+/* Header styles */
 header{
     position: fixed;
     top: 0;
@@ -95,8 +96,10 @@ nav ul li a:hover{
     color: plum;
 }
 
+/* Contains styles */
+
 section{
-    margin-top: 30vh;
+    margin-top: 40vh;
     padding: 100px;
 }
 
@@ -105,6 +108,47 @@ section h2{
 }
 section p{
     font-size: 1.2em;
+}
+
+/* Home section */
+section #home{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-bottom: 10vh;
+}
+
+#home div:nth-child(1){
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_contents {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 100px;
+}
+
+.home_contents div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_contents .content{
+    min-height: 20rem;
+}
+
+.home_contents .imagen_profile{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.home_contents div img{
+    max-width: 20rem;
+    border-radius: 50%;
 }
 
 @media (max-width:991px){
@@ -161,5 +205,31 @@ section p{
         background-size: 35px;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    /* Section information */
+    .home_contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+        margin: 0px;
+    }
+
+    .home_contents .content{
+        min-width: 12rem;
+        max-height: 100px;
+    }
+    
+    .home_contents .imagen_profile{
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+    }
+    
+    .home_contents .imagen_profile img{
+        max-height: 13rem;
+        border-radius: 50%;
     }
 }
