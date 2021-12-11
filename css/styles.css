@@ -99,8 +99,8 @@ nav ul li a:hover{
 /* Contains styles */
 
 section{
-    margin-top: 40vh;
-    padding: 100px;
+    margin-top: 60vh;
+    padding: 50px;
 }
 
 section h2{
@@ -112,13 +112,16 @@ section p{
 
 /* Home section */
 section #home{
+    min-height: 40vh;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-rows: auto 1fr;
-    margin-bottom: 10vh;
 }
 
 #home div:nth-child(1){
-    margin-bottom: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +130,7 @@ section #home{
 .home_contents {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 100px;
+    gap: 50px;
 }
 
 .home_contents div{
@@ -137,7 +140,7 @@ section #home{
 }
 
 .home_contents .content{
-    min-height: 20rem;
+    min-height: 15rem;
 }
 
 .home_contents .imagen_profile{
@@ -147,9 +150,79 @@ section #home{
 }
 
 .home_contents div img{
-    max-width: 20rem;
+    max-width: 100%;
     border-radius: 50%;
 }
+
+/* Slyder */
+
+.container_sl{
+    width: 100%;
+    min-height: 60vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider{
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.slider__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+}
+
+.slider__body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+
+.slider__body--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider__texts{
+    max-width: 900px;
+}
+
+.subtitle{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.slider__review{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+
+.slider__img{
+    width: 17rem;
+    height: 17rem;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+    display: block;
+    margin: 0 20px;
+}
+
+.slider__arrow{
+    cursor: pointer;
+}
+
 
 @media (max-width:991px){
     section,header{
@@ -208,12 +281,19 @@ section #home{
     }
 
     /* Section information */
+    section #home{
+        min-height: 85vh;
+    }
+    #home div:nth-child(1){
+        margin-bottom: 20px;
+    }
+
     .home_contents {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 0px;
+        gap: 20px;
         margin: 0px;
     }
 
