@@ -5,8 +5,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarlosReyes</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
     
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>C<span>R</span></h2>
+                </div>
+                <ul class="menu">
+                    <li ><a class="active" href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="info-content">
+                <h1>I'm <span>Carlos</span>Reyes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit explicabo tempora magnam, totam labore, voluptates eius rem quidem minima quam debitis numquam sit. Debitis in fuga recusandae ad mollitia tenetur doloremque.</p>
+                <a download href="data/Carlos_Andres_Reyes_Peña_cv.pdf">
+                    <button class="download-cv" >Download CV</button>
+                </a>
+            </div>
+            <img src="./img/prueba.png" alt="profile_pic CarlosReyes">
+        </main>
+    </div>
+
+    <div class="about">
+        <img src="img/profile.jpg" alt="CarlosReyes_AboutPic">
+    
+        <div class="about-info">
+            <h2>About me</h2>
+            <div class="divider"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit culpa esse dolor blanditiis quos itaque illo deleniti debitis, earum, quaerat, saepe aperiam sit? Provident incidunt nam necessitatibus, reiciendis veritatis cum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius autem doloribus fugit sunt dolorum, beatae placeat, expedita, obcaecati voluptate perferendis mollitia fugiat a eum tempora. Delectus quaerat amet quisquam reiciendis!</p>
+            <button class="download-cv">Read more</button>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <div class="portfolio-headings">
+            <h2>My Portfolio</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/profile.jpg" alt="">
+                </div>
+                <div class="card__title">
+                    <h2>Project Description</h2>
+                    <p class="card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti incidunt natus cumque quos cupiditate accusamus delectus vero, obcaecati odit in soluta. Quae ex deleniti beatae ipsam provident culpa unde.
+                    </p>
+                </div>
+                <div class="card__projects-links">
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/profile.jpg" alt="">
+                </div>
+                <div class="card__title">
+                    <h2>Project Description</h2>
+                    <p class="card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti incidunt natus cumque quos cupiditate accusamus delectus vero, obcaecati odit in soluta. Quae ex deleniti beatae ipsam provident culpa unde.
+                    </p>
+                </div>
+                <div class="card__projects-links">
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/profile.jpg" alt="">
+                </div>
+                <div class="card__title">
+                    <h2>Project Description</h2>
+                    <p class="card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti incidunt natus cumque quos cupiditate accusamus delectus vero, obcaecati odit in soluta. Quae ex deleniti beatae ipsam provident culpa unde.
+                    </p>
+                </div>
+                <div class="card__projects-links">
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/profile.jpg" alt="">
+                </div>
+                <div class="card__title">
+                    <h2>Project Description</h2>
+                    <p class="card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti incidunt natus cumque quos cupiditate accusamus delectus vero, obcaecati odit in soluta. Quae ex deleniti beatae ipsam provident culpa unde.
+                    </p>
+                </div>
+                <div class="card__projects-links">
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-headings">
+            <h2>Keep in touch</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container-contact">
+            <img src="img/prueba.png" alt="carlosreyes_backpic">
+
+            <div class="contact-form">
+                <h4>Send me a message...</h4>
+                <form class="form">
+                    <input type="text" placeholder="Your name here">
+                    <input type="email" placeholder="Email@gmail.com">
+                    <textarea placeholder="Place your message here"></textarea>
+                    <button type="submit" class="btn-submit">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Carlos <span>Reyes</span></h2>
+            <h5>FullStack Developer</h5>
+        </div>
+        <div class="social-network">
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </footer>
 </body>
 </html>
