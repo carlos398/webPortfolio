@@ -162,6 +162,7 @@ span {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 40px;
+    padding-bottom: 20px;
 }
 
 .card{
@@ -326,7 +327,13 @@ span {
     font-size: 2em;
 }
 
-.social-network i:hover{
+.social-network a {
+    color: #191c32;
+    margin: 0;
+    padding: 0;
+}
+
+.social-network a i:hover{
     transition: .4s;
     cursor: pointer;
     transform: scale(1.5);
