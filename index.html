@@ -18,38 +18,37 @@
                     <h2>C<span>R</span></h2>
                 </div>
                 <ul class="menu">
-                    <li ><a class="active" href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Portfolio</a></li>
+                    <li ><a class="active" href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="main">
+        <main class="main" id="Home">
             <div class="info-content">
                 <h1>I'm <span>Carlos</span>Reyes</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit explicabo tempora magnam, totam labore, voluptates eius rem quidem minima quam debitis numquam sit. Debitis in fuga recusandae ad mollitia tenetur doloremque.</p>
+                <p>Hello my name is Carlos Reyes, I am a frontend and backend software developer, I have developed this portfolio to show my experiences as a developer and in the next button you will get my CV so you can know more about my skills.</p>
                 <a download href="data/Carlos_Andres_Reyes_Peña_cv.pdf">
                     <button class="download-cv" >Download CV</button>
                 </a>
             </div>
-            <img src="./img/prueba.png" alt="profile_pic CarlosReyes">
+            <img src="./img/img mia.png" alt="profile_pic CarlosReyes">
         </main>
     </div>
 
-    <div class="about">
-        <img src="img/profile.jpg" alt="CarlosReyes_AboutPic">
+    <div class="about" id="About">
+        <img src="img/imga2_me.jpeg" alt="CarlosReyes_AboutPic">
     
         <div class="about-info">
             <h2>About me</h2>
             <div class="divider"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit culpa esse dolor blanditiis quos itaque illo deleniti debitis, earum, quaerat, saepe aperiam sit? Provident incidunt nam necessitatibus, reiciendis veritatis cum!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius autem doloribus fugit sunt dolorum, beatae placeat, expedita, obcaecati voluptate perferendis mollitia fugiat a eum tempora. Delectus quaerat amet quisquam reiciendis!</p>
-            <button class="download-cv">Read more</button>
+            <p>I am a frontend backend developer with knowledge in python technologies like Django and Flask developing web applications to improve my skills, I also have knowledge in frameworks like Node.js, Express, React.js, Angular.js and handling relational databases such as MySQL and Postgres, also non-relational as is MongoDB.</p>
+            <p>I like constant learning, I do not consider myself as an expert, therefore I think that every day we can learn something and improve our skills, I like to watch movies and documentaries on psychology to understand people more and more every day.</p>
         </div>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio" id="Portfolio">
         <div class="portfolio-headings">
             <h2>My Portfolio</h2>
             <div class="divider"></div>
@@ -57,12 +56,12 @@
         <div class="container">
             <div class="card">
                 <div class="card__img">
-                    <img src="./img/profile.jpg" alt="">
+                    <img src="./img/Projects-pics/ReactHooks-Flask/ViasualkHooksFlask1.png" alt="">
                 </div>
                 <div class="card__title">
-                    <h2>Project Description</h2>
+                    <h2>ReactHooks-Flask</h2>
                     <p class="card__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti incidunt natus cumque quos cupiditate accusamus delectus vero, obcaecati odit in soluta. Quae ex deleniti beatae ipsam provident culpa unde.
+                        En este proyecto hemos trabajado con flask de la parte del servidor y react en su frontend utilizando los hooks para facilitar su uso y crear nuestra app de personas
                     </p>
                 </div>
                 <div class="card__projects-links">
@@ -76,12 +75,12 @@
             </div>
             <div class="card">
                 <div class="card__img">
-                    <img src="./img/profile.jpg" alt="">
+                    <img src="./img/Projects-pics/flask/FlaskContactAppVisual1.png" alt="">
                 </div>
                 <div class="card__title">
-                    <h2>Project Description</h2>
+                    <h2>flask contact app</h2>
                     <p class="card__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti incidunt natus cumque quos cupiditate accusamus delectus vero, obcaecati odit in soluta. Quae ex deleniti beatae ipsam provident culpa unde.
+                        En este proyecto hemos trabajado con flask como framework para crear la parte visual y el servidor con conexion a una bd para crear nuestra app de contactos
                     </p>
                 </div>
                 <div class="card__projects-links">
@@ -95,12 +94,12 @@
             </div>
             <div class="card">
                 <div class="card__img">
-                    <img src="./img/profile.jpg" alt="">
+                    <img src="./img/Projects-pics/js-poo-quiz/visualQuizJs.png" alt="">
                 </div>
                 <div class="card__title">
-                    <h2>Project Description</h2>
+                    <h2>Quiz poo JS</h2>
                     <p class="card__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti incidunt natus cumque quos cupiditate accusamus delectus vero, obcaecati odit in soluta. Quae ex deleniti beatae ipsam provident culpa unde.
+                        En este caso hemos creado una aplicacion de quiz uinicamente con html css y js para poner a prueba nuestros conocimientos
                     </p>
                 </div>
                 <div class="card__projects-links">
@@ -114,12 +113,85 @@
             </div>
             <div class="card">
                 <div class="card__img">
-                    <img src="./img/profile.jpg" alt="">
+                    <img src="./img/Projects-pics/NodeJS-MongoCrud/VisualNodemongo3.png" alt="">
                 </div>
                 <div class="card__title">
-                    <h2>Project Description</h2>
+                    <h2>Mongo Curd con Node</h2>
                     <p class="card__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti incidunt natus cumque quos cupiditate accusamus delectus vero, obcaecati odit in soluta. Quae ex deleniti beatae ipsam provident culpa unde.
+                        En este proyecto cree una aplicacion de notas unicamente con Node (Express en el servidor) y MongoDb en la bd
+                    </p>
+                </div>
+                <div class="card__projects-links">
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/Projects-pics/SmarthContractSOL/Frontend.png" alt="">
+                </div>
+                <div class="card__title">
+                    <h2>TaskApp whit Ganache</h2>
+                    <p class="card__description">
+                        Este es un proyecto un tanto especial pues hemos creado una Daap con el fin de probar lo que se podria hacer con los Smarth contracts y con Ganache del lado del servidor
+                    </p>
+                </div>
+                <div class="card__projects-links">
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/Projects-pics/API-DJANGOREST/models.png" alt="">
+                </div>
+                <div class="card__title">
+                    <h2>API DJANGO</h2>
+                    <p class="card__description">Django api para ser consumida ya sea en React o algun otro framework que le sea posible hacerlo, cabe aclarar que esta API cuenta con autenticacion de WJT para brindar seguridad
+                    </p>
+                </div>
+                <div class="card__projects-links">
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/Projects-pics/DjangoPasswordGen/VisualPasswordGenDjango.png" alt="">
+                </div>
+                <div class="card__title">
+                    <h2>Django Password Gen</h2>
+                    <p class="card__description">En este caso hemos creado una aplicacion simple en Django para generar contrasenas aleatorias y seguras
+                    </p>
+                </div>
+                <div class="card__projects-links">
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./img/Projects-pics/Flask_Users_control/post_testvisual.png" alt="">
+                </div>
+                <div class="card__title">
+                    <h2>Flask Users Control</h2>
+                    <p class="card__description">Nuevamente con el manejo de flask crearemos una app que tendra el control de los accesos a la app sol osi estan en una sesion, asi mismo cuenta con un servidor de correo electronico
                     </p>
                 </div>
                 <div class="card__projects-links">
@@ -141,7 +213,7 @@
             <h5>Backend | Frontend Developer</h5>
         </div>
         <div class="social-network">
-            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/carlos-andres-reyes-pe%C3%B1a/" target="blank"><i class="fab fa-linkedin-in"></i></a>
             <a href=""><i class="fab fa-twitter"></i></a>
             <a href=""><i class="fab fa-instagram"></i></a>
         </div>
